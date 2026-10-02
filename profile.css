@@ -1,0 +1,216 @@
+
+/* Basic page styling */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #161616;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 5px solid #FFD700;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header h2 {
+    margin: 5px;
+    color: #FFD700;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #FFD700;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Main content */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    background-color: #ffffff;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #FFD700;
+}
+
+/* Profile */
+
+.profile {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #FFD700;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info span {
+    color: #141414;
+}
+
+/* Courses */
+
+#courses li {
+    margin-bottom: 8px;
+}
+
+/* Schedule table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #000000;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #000000;
+    color: #FFD700;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Form */
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #FFD700;
+    outline: none;
+}
+
+button {
+    background-color: #FFD700;
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 12px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #000000;
+    color: #FFD700;
+}
+
+/* Footer */
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-top: 5px solid #FFD700;
+}
+
+/* Mobile responsive design */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile img {
+        width: 150px;
+        height: 150px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
+
